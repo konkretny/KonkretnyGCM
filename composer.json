@@ -1,0 +1,17 @@
+{
+    "name": "konkretny/konkretnygcm",
+    "description": "This simple class helps retrieving tokens with devices using the GCM (Google Cloud Messaging), and sending push messages to the device by the GCM.",
+    "keywords": ["php","gcm","google cloud messaging","simple","class"],
+    "homepage": "http://konkretny.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Romanowicz",
+            "homepage": "http://konkretny.pl",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.24"
+    }
+}
