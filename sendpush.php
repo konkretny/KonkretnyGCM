@@ -6,12 +6,6 @@
     </head>
     <body>
         <?php
-        /*
-        Author: Marcin Romanowicz
-        URL: http://konkretny.pl/
-        License: MIT
-        Version: 1.0
-        */
         
         require_once('KonkretnyGCM.class.php');
         $token = new KonkretnyGCM();
@@ -37,8 +31,8 @@
         //GET Token array
         $token->pdo_read();
         $token_array = $token->getToken_array();
-        $messeage = $token->setMesseage(array('message'=>'Example push by KonkretnyGCM'));
-        $token->sendPush($token_array,$messeage);
+        $token->setMesseage(array('message'=>'Example push by KonkretnyGCM'));
+        $token->sendPush($token_array,$token->getMesseage());
 
         ?>
     </body>

@@ -1,4 +1,12 @@
 <?php
+
+/*
+Author: Marcin Romanowicz
+URL: http://konkretny.pl/
+License: MIT
+Version: 1.0.1
+*/
+
 class KonkretnyGCM{
     
     //main settings
@@ -113,7 +121,7 @@ class KonkretnyGCM{
     
     
     public function sendPush($tokens=array(), $data=array()){
-        $post_data = array('registration_tokens'=> $tokens,'data'=>$data);
+        $post_data = array('registration_ids'=> $tokens,'data'=>$data);
         $headers = array('Authorization: key=' . $this->api_server_key,'Content-Type: application/json');
         $curl = curl_init();
         curl_setopt( $curl, CURLOPT_URL, 'https://gcm-http.googleapis.com/gcm/send');
@@ -184,6 +192,8 @@ class KonkretnyGCM{
         return $this->token_array;
     }
 
-
+    public function getMesseage() {
+        return $this->messeage;
+    }
 
 }

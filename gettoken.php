@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
         <?php
-        /*
-        Author: Marcin Romanowicz
-        URL: http://konkretny.pl/
-        License: MIT
-        Version: 1.0
-        */
+
         
         require_once('KonkretnyGCM.class.php');
         $token = new KonkretnyGCM();
@@ -47,5 +35,3 @@
         $token->pdo_insert(); //enable connection with database and add token to database
     
         ?>
-    </body>
-</html>
