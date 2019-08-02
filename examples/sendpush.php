@@ -9,7 +9,7 @@
 <body>
     <?php
 
-        require_once('../src/KonkretnyGCM.class.php');
+        require_once('../src/KonkretnyGCM.php');
         $token = new Konkretny\KonkretnyGCM();
 
         //database connection settings
